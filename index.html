@@ -4,41 +4,165 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Puja's Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Puja’s Developer Portfolio</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            background: #f8ecec;
+            color: #333;
+            padding: 20px;
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            color: #2b2727;
+        }
+
+        nav {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        nav a {
+            margin: 0 15px;
+            color: #1a1919;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .projects .project {
+            margin-bottom: 30px;
+        }
+
+        .projects h3 {
+            margin-bottom: 10px;
+            color: #0052cc;
+        }
+
+        .projects p {
+            margin-bottom: 8px;
+        }
+
+        .projects a {
+            color: #0052cc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            margin: 50px 0 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+    </style>
 </head>
 
 <body>
 
-    <div class="container">
-        <!-- Page 1 -->
-        <div id="page1" class="page active">
-            <h1>Hello, how are you?</h1>
+    <header>
+        <h1>PUJA ROY</h1>
+
+        <p>__ Front-End Developer | HTML, CSS, JavaScript __</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I’m a self-taught front-end developer passionate about turning design ideas into responsive web experiences using HTML5, CSS3, and JavaScript. 
+            I’ve built and polished projects from interactive calculators to portfolio sites, focusing on clean markup, modular CSS, and real-world problem solving. 
+            I use Git for version control, showcase my work on GitHub, and continuously explore tools like CSS Grid, Flexbox, and ES6 to optimize performance and accessibility.
+        </p>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+
+        <div class="project">
+            <h3>Interactive Calculator</h3>
+            <p>
+                A responsive calculator built with vanilla JavaScript. Supports basic
+                arithmetic and keyboard input.
+            </p>
+            <a href="https://github.com/roypuja16/calculator" target="_blank">
+                View Source on GitHub
+            </a>
         </div>
 
-        <!-- Page 2 -->
-        <div id="page2" class="page">
-            <h1>I am Puja Roy</h1>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>
+                My personal portfolio site showcasing projects, skills, and contact
+                information. Built with HTML5 and CSS Grid.
+            </p>
+            <a href="https://github.com/roypuja16/portfolio" target="_blank">
+                View Source on GitHub
+            </a>
         </div>
 
-        <!-- Page 3 -->
-        <div id="page3" class="page">
-            <h1>Contact Me</h1>
-            <p>Email: <a href="mailto:you@example.com">pujaroyofficial@gmail.com</a></p>
-            <a href="your-resume.pdf" download class="btn">Download Resume</a>
-        </div>
+        <!-- Add more project blocks as needed -->
+    </section>
 
-        <!-- Page 4 -->
-        <div id="page4" class="page">
-            <h1>My GitHub</h1>
-            <a href="https://github.com/yourusername" target="_blank" class="btn">"https://github.com/roypuja16"</a>
-        </div>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML5 & CSS3</li>
+            <li>JavaScript (ES6+)</li>
+            <li>Responsive Design</li>
+            <li>Git & GitHub</li>
+            <li>Basic Node.js</li>
+        </ul>
+    </section>
 
-        <!-- Next Button -->
-        <button id="nextBtn" class="next-btn">Next</button>
-    </div>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: pujaroyofficial2@gmail.com</p>
+        <p>
+            LinkedIn:
+            <a href="https://linkedin.com/in/pujaroyofficial2" target="_blank">
+                linkedin.com/in/pujaroyofficial2
+            </a>
+        </p>
+    </section>
 
-    <script src="script.js"></script>
+    <footer>
+        © 2025 Puja Roy. All rights reserved.
+    </footer>
+
 </body>
 
 </html>
